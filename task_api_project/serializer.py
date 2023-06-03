@@ -9,9 +9,3 @@ class TaskSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Task
         fields = ('id', 'name', 'description', 'due_date')
-
-
-class TaskRequestSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Task
-        fields = ('name', 'description')
